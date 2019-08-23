@@ -116,3 +116,5 @@ AWS_SECRET_ACCESS_KEY=Secret access key
 AWS_DEFAULT_REGION=ap-northeast-1
 AWS_BUCKET=bucket name
 ~~~
+
+## S3 でアクセス権を設定する

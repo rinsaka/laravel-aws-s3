@@ -107,3 +107,12 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ~~~
 [vagrant@localhost laravel-aws-s3]$ php ../composer.phar require league/flysystem-aws-s3-v3
 ~~~
+
+## .env に設定を追加する
+
+~~~
+AWS_ACCESS_KEY_ID=Access key ID
+AWS_SECRET_ACCESS_KEY=Secret access key
+AWS_DEFAULT_REGION=ap-northeast-1
+AWS_BUCKET=bucket name
+~~~

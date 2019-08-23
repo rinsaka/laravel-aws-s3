@@ -63,3 +63,22 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# S3 を使う
+## S3用のIAMを作成する
+- 「セキュリティ資格情報」を開く
+<p align="center"><img src="storage/app/figs/iam01.png"></p>
+
+-「ユーザー」を開く
+
+-「ユーザーを追加」を開く
+
+-「ユーザー名」を入力し，「プログラムによるアクセス」にチェックを入れる．「次のステップ」をクリック
+
+- 「既存のポリシーを直接アタッチ」を選び，ポリシー名から「AmazonS3FullAccess」にチェックを入れる．「次のステップ」をクリック
+
+- タグの追加で「キー」と「値」を適当に入れる．「次のステップ」をクリック．
+
+- ユーザーを追加：内容を確認する．「ユーザーの作成」をクリック．
+
+- ユーザーを追加（成功）：アクセスキーIDとシークレットアクセスキーが発行されるので，これを控えておく．また.csvファイルもダウンロードする．

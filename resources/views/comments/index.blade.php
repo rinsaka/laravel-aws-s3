@@ -6,5 +6,8 @@
 </head>
 <body>
   <h1>Comments</h1>
+  <p>
+    <img src="{{$path}}">
+  </p>
 </body>
 </html>

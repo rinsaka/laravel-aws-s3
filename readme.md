@@ -70,15 +70,34 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 <p align="center"><img src="storage/app/figs/iam01.png"></p>
 
 -「ユーザー」を開く
+<p align="center"><img src="storage/app/figs/iam02.png"></p>
+<p align="center"><img src="storage/app/figs/iam03.png"></p>
 
 -「ユーザーを追加」を開く
 
+<p align="center"><img src="storage/app/figs/iam04.png"></p>
+
 -「ユーザー名」を入力し，「プログラムによるアクセス」にチェックを入れる．「次のステップ」をクリック
+
+<p align="center"><img src="storage/app/figs/iam05.png"></p>
 
 - 「既存のポリシーを直接アタッチ」を選び，ポリシー名から「AmazonS3FullAccess」にチェックを入れる．「次のステップ」をクリック
 
+<p align="center"><img src="storage/app/figs/iam05.png"></p>
+<p align="center"><img src="storage/app/figs/iam06.png"></p>
+<p align="center"><img src="storage/app/figs/iam08.png"></p>
+
+
 - タグの追加で「キー」と「値」を適当に入れる．「次のステップ」をクリック．
+
+<p align="center"><img src="storage/app/figs/iam09.png"></p>
 
 - ユーザーを追加：内容を確認する．「ユーザーの作成」をクリック．
 
+<p align="center"><img src="storage/app/figs/iam10.png"></p>
+
 - ユーザーを追加（成功）：アクセスキーIDとシークレットアクセスキーが発行されるので，これを控えておく．また.csvファイルもダウンロードする．
+
+<p align="center"><img src="storage/app/figs/iam11.png"></p>
+<p align="center"><img src="storage/app/figs/iam12.png"></p>
+<p align="center"><img src="storage/app/figs/iam13.png"></p>

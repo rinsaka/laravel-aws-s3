@@ -101,3 +101,9 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 <p align="center"><img src="storage/app/figs/iam11.png"></p>
 <p align="center"><img src="storage/app/figs/iam12.png"></p>
 <p align="center"><img src="storage/app/figs/iam13.png"></p>
+
+## パッケージのインストール
+
+~~~
+[vagrant@localhost laravel-aws-s3]$ php ../composer.phar require league/flysystem-aws-s3-v3
+~~~

@@ -17,3 +17,5 @@ Route::get('/', function () {
 
 Route::get('/comments', 'CommentsController@index');
 Route::get('/comments/list', 'CommentsController@list');
+Route::get('/comments/create', 'CommentsController@create');
+Route::POST('/comments', 'CommentsController@store');

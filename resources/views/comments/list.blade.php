@@ -17,7 +17,7 @@
     <hr>
   @endforeach
 
-
+<p><a href="{{ action('CommentsController@create') }}">ファイルのアップロード</a></p>
 
 
 </body>

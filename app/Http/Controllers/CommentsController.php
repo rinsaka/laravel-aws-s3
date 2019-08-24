@@ -59,4 +59,21 @@ class CommentsController extends Controller
     return view('comments.list')
             ->with('images', $images);
   }
+
+  public function create()
+  {
+    return view('comments.store');
+  }
+
+  public function store(Request $request)
+  {
+    $file = $request->file('file');
+    // putFile では一意のファイル名で保存される
+    // 拡張子を偽装しても，MIMEの検査により決まる
+    $path = Storage::disk('s3')->putFile('/list', $file);
+
+    // putFileAs ではファイル名を指定できる（同名のファイルがあれば上書きされる）
+    // $path = Storage::disk('s3')->putFileAs('/list', $file, 'hoge.png');
+    return redirect('/comments/list');
+  }
 }

@@ -160,6 +160,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+        *    AWS-SDK-PHP-laravel
+        *    https://github.com/aws/aws-sdk-php-laravel
+        */
+        Aws\Laravel\AwsServiceProvider::class,
     ],
 
     /*
@@ -209,6 +214,11 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        /*
+        *    AWS-SDK-PHP-laravel
+        *    https://github.com/aws/aws-sdk-php-laravel
+        */
+        'AWS' => Aws\Laravel\AwsFacade::class,
     ],
 
 ];

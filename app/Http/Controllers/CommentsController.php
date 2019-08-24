@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\App;
 
 class CommentsController extends Controller
 {
+  /*
+  * いくつかのファイルを様々な方法で取得する
+  */
   public function index()
   {
     // 共有ファイルは単純
@@ -35,5 +38,25 @@ class CommentsController extends Controller
       ->with('path003', $path003)
       ->with('path004', $path004)
       ->with('path005', $path005);
+  }
+
+  /*
+  *  S3 の list ディレクトリにあるファイルの一覧を取り出す．
+  */
+  public function list()
+  {
+    $images_list = Storage::disk('s3')->files('list');
+    $images = array();
+
+    foreach($images_list as $img) {
+      $newobj = new \stdClass();
+      $newobj->path = $img;
+      $newobj->url = Storage::disk('s3')->temporaryUrl($img, now()->addMinutes(5));
+      $images[$img] = $newobj;
+    }
+    // dd('list', $images_list, $images);
+
+    return view('comments.list')
+            ->with('images', $images);
   }
 }

@@ -83,7 +83,8 @@
                 </div>
 
                 <div class="links">
-                    <a href="comments">Comments</a>
+                  <a href="comments">Comments</a>
+                  <a href="comments/list">Comments->list</a>
                 </div>
             </div>
         </div>
